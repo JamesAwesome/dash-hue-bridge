@@ -8,10 +8,16 @@ const dash_button = require("node-dash-button");
 const cli = meow(`
     Usage
       $ app.js <Mac Address>
+    Options
+      --help, -h  Print usage and exit
 
     Examples
       $ app.js 00:12:34:56:78:00
-`);
+`, {
+    alias: {
+        h: 'help'
+    }
+});
 
 var mac_address = cli.input[0];
 
