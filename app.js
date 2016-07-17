@@ -52,7 +52,7 @@ function timeStamp() {
 var hueClient = new hueApi(hueBridge, hueUser);
 var on = false;
 
-console.log(chalk.green(timeStamp() + 'INFO: Starting dash-hue-bridge'));
+console.log(chalk.green(timeStamp() + 'INFO: Starting dash-hue-bridge...'));
 
 dash.on('detected', function (dash_id) {
   console.log(chalk.green(timeStamp() + 'INFO: Click detected on Dash button: ' + dash_id));
